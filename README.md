@@ -1,11 +1,11 @@
-# hard-rock-solution
-### Search Song
-api link: https://api.lyrics.ovh/suggest/:searchText
-
-example: https://api.lyrics.ovh/suggest/hello
-
-### Lyric
-lyric link: https://api.lyrics.ovh/v1/:artist/:title
-
-example: https://api.lyrics.ovh/v1/Adele/Hello
 # A_Music
+
+## Live site link (https://imtious-coder.github.io/A_Music/)
+
+#### This site has..
+* HTML5
+* CSS3
+* Javascript and
+* Bootstrap
+
+##### This is a website where you can Search you Music by Name and can find the Lyrics of that music 
