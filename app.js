@@ -1,5 +1,6 @@
 const searchSongs = async () => {
     const searchText = document.getElementById('search-field').value;
+    // Data fetching...
     const response = await fetch(`https://api.lyrics.ovh/suggest/${searchText}`);
     const data = await response.json();
     displaySongs(data.data);
@@ -8,6 +9,7 @@ const searchSongs = async () => {
 const displaySongs = songs => {
     const songsContainer = document.getElementById('songs-container');
     songsContainer.innerHTML = '';
+    // ForEach method and data setting to UI...
     songs.forEach(song => {
         const songDiv = document.createElement('div');
         songDiv.className = 'single-result row align-items-center my-3 p-3';
@@ -25,12 +27,14 @@ const displaySongs = songs => {
 }
 
 const getLyrics = async (artist, title) => {
+    // Getting the lyrics...
     const response = await fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`);
     const data = await response.json();
     displayLyrics(data.lyrics);
 }
 
 const displayLyrics = lyrics => {
+    // Lyrics setting to UI...
     const lyricsDiv = document.getElementById('lyrics');
     lyricsDiv.innerText = lyrics;
 }
